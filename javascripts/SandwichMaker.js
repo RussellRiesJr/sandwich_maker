@@ -9,4 +9,4 @@ var SandwichMaker = (function() {
       totalPrice += toppingPrice;
     }
   };
-})();
+})(SandwichMaker || {});

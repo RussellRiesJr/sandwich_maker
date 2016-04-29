@@ -3,14 +3,72 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Sandwich Maker! </title>
     <link rel="stylesheet" href="">
   </head>
   <body>
   <!-- a section of options for each sandwich part -->
+    <section>
+      <fieldset>
+        <h3>Let's Build Your Sandwich!!!</h3>
+        <div>
+          <h5>What kind of bread would you like? (Pick one)</h5>
+          <input type="radio" name="bread" id="bread_button" value="white">White
+          <input type="radio" name="bread" id="bread_button" value="wheat">Whole Wheat
+          <input type="radio" name="bread" id="bread_button" value="rye">Rye
+          <input type="radio" name="bread" id="bread_button" value="sourdough">Sourdough
+          <input type="radio" name="bread" id="bread_button" value="none">No Bread<br/>
+        </div>
+        <div>
+          <h5>Pick as many meats as you want</h5>
+          <input type="checkbox" name="turkey" id="meat_button" value="turkey">Turkey
+          <input type="checkbox" name="bacon" id="meat_button" value="bacon">Bacon
+          <input type="checkbox" name="ham" id="meat_button" value="ham">Ham
+          <input type="checkbox" name="roast_beef" id="meat_button" value="roast_beef">Roast Beef
+          <input type="checkbox" name="salami" id="meat_button" value="salami">Salami
+          <input type="checkbox" name="none" id="meat_button" value="none">None
+        </div>
+        <div>
+          <h5>Pick as many cheeses as you want</h5>
+          <input type="checkbox" name="cheddar" id="cheese_button" value="cheddar">Cheddar
+          <input type="checkbox" name="pepper_jack" id="cheese_button" value="pepper_jack">Pepper Jack
+          <input type="checkbox" name="munster" id="cheese_button" value="munster">Munster
+          <input type="checkbox" name="provolone" id="cheese_button" value="provolone">Provolone
+          <input type="checkbox" name="none" id="cheese_button" value="none">None
+        </div>
+        <div>
+          <h5>Pick all the condiments you want</h5>
+          <input type="checkbox" name="mayo" id="con_button" value="mayo">Mayo
+          <input type="checkbox" name="mustard" id="con_button" value="mustard">Mustard
+          <input type="checkbox" name="salt" id="con_button" value="salt">Salt
+          <input type="checkbox" name="pepper" id="con_button" value="pepper">Pepper
+          <input type="checkbox" name="oil" id="con_button" value="oil">Oil
+          <input type="checkbox" name="none" id="con_button" value="none">None
+        </div>
+        <div>
+          <h5>Pick the vegetables you want</h5>
+          <input type="checkbox" name="lettuce" id="veggie_button" value="lettuce">Lettuce
+          <input type="checkbox" name="tomato" id="veggie_button" value="tomato">Tomato
+          <input type="checkbox" name="onion" id="veggie_button" value="onion">Onion
+          <input type="checkbox" name="pickle" id="veggie_button" value="pickle">Pickle
+          <input type="checkbox" name="none" id="veggie_button" value="none">None
+        </div>
+        <div>
+          <button type="button" id="build">Build My Sandwich!</button>
+        </div>
+      </fieldset>
+    </section>
   <!-- the ability to select multiple, or zero, choices for each section (such as turkey and bacon, or "no meat") -->
 
   <!-- an empty DOM element into which the final sandwich order and its cost will be inserted -->
 
+
+  <script src="javascripts/DOMHandler.js"></script>
+  <script src="javascripts/SandwichMaker.js"></script>
+  <script src="javascripts/Meat.js"></script>
+  <script src="javascripts/Bread.js"></script>
+  <script src="javascripts/Cheese.js"></script>
+  <script src="javascripts/Condiment.js"></script>
+  <script src="javascripts/Veggie.js"></script>
   </body>
 </html>
