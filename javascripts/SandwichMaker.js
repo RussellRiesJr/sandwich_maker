@@ -8,5 +8,8 @@ var SandwichMaker = (function() {
     addTopping: function(toppingPrice) {
       totalPrice += toppingPrice;
     }
+    setMeatTopping: function(selectedTopping){
+      toppingPrice += addMeat(selectedTopping);
+    }
   };
-})(SandwichMaker || {});
+})();

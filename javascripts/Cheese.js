@@ -6,7 +6,7 @@ var SandwichMaker = (function(maker) {
 
   // Augment the original object with another method
   maker.addCheese = function() {
-    return ???;
+    return 0;
   };
 
   // Return the new, augmented object with the new method on it
