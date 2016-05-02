@@ -2,7 +2,7 @@
 var SandwichMaker = (function(maker) {
 
   // Private variable to store the different meat prices
-  var meatPrices = {"turkey": 0.90, "bacon": 1.50, "ham": 1.00, "roast_beef": 2.00, "salami": 1.50};
+  var meatPrices = {"turkey": 0.9, "bacon": 1.5, "ham": 1, "roast_beef": 2, "salami": 1.5};
 
   maker.getMeat = function() {
     return meatPrices;
@@ -13,7 +13,7 @@ var SandwichMaker = (function(maker) {
     var toppingPrice = meatPrices[selectedTopping];
     console.log(selectedTopping);
     console.log(toppingPrice);
-    return toppingPrice
+    return {price:toppingPrice, item:selectedTopping}
   };
 
   // Return the new, augmented object with the new method on it
