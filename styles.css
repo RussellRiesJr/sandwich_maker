@@ -19,4 +19,9 @@
   margin: 1%;
   border-radius: 10px;
   background-color: white;
+  vertical-align: top;
+}
+
+.middle {
+  text-align: center;
 }
