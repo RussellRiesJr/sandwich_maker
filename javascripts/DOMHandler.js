@@ -28,7 +28,7 @@ meatChooser.addEventListener("click", function(event) {
   // Determine the price of the topping chosen
   // Add the topping to the SandwichMaker to increase the total price
     finalSandwichPrice += order.price;
-    itemsOrder += order.item + " ";
+    itemsOrder += order.item + ", ";
     price.innerHTML = "<h1 class='middle'>$" + finalSandwichPrice.toFixed(2) + "</h1>";
     orderFinal.innerHTML = "<h4 class='middle'>" + itemsOrder.replace(/_/g, " ") + "</h4>";
     console.log(finalSandwichPrice, itemsOrder);
@@ -40,7 +40,7 @@ breadChooser.addEventListener("click", function(event) {
   if (event.target.type === "radio") {
     var order = SandwichMaker.addBread(selectedTopping)
     finalSandwichPrice += order.price;
-    itemsOrder += order.item + " ";
+    itemsOrder += order.item + ", ";
     price.innerHTML = "<h1 class='middle'>$" + finalSandwichPrice.toFixed(2) + "</h1>";
     orderFinal.innerHTML = "<h4 class='middle'>" + itemsOrder.replace(/_/g, " ") + "</h4>";
     console.log(finalSandwichPrice, itemsOrder);
@@ -52,7 +52,7 @@ cheeseChooser.addEventListener("click", function(event) {
   if (event.target.type === "checkbox") {
     var order = SandwichMaker.addCheese(selectedTopping)
     finalSandwichPrice += order.price;
-    itemsOrder += order.item + " ";
+    itemsOrder += order.item + ", ";
     price.innerHTML = "<h1 class='middle'>$" + finalSandwichPrice.toFixed(2) + "</h1>";
     orderFinal.innerHTML = "<h4 class='middle'>" + itemsOrder.replace(/_/g, " ") + "</h4>";
     console.log(finalSandwichPrice, itemsOrder);
@@ -64,7 +64,7 @@ condimentChooser.addEventListener("click", function(event) {
   if (event.target.type === "checkbox") {
     var order = SandwichMaker.addCondiment(selectedTopping);
     finalSandwichPrice += order.price;
-    itemsOrder += order.item + " ";
+    itemsOrder += order.item + ", ";
     price.innerHTML = "<h1 class='middle'>$" + finalSandwichPrice.toFixed(2) + "</h1>";
     orderFinal.innerHTML = "<h4 class='middle'>" + itemsOrder.replace(/_/g, " ") + "</h4>";
     console.log(finalSandwichPrice, itemsOrder);
@@ -76,7 +76,7 @@ veggieChooser.addEventListener("click", function(event) {
   if (event.target.type === "checkbox") {
     var order = SandwichMaker.addVeggie(selectedTopping)
     finalSandwichPrice += order.price;
-    itemsOrder += order.item + " ";
+    itemsOrder += order.item + ", ";
     price.innerHTML = "<h1 class='middle'>$" + finalSandwichPrice.toFixed(2) + "</h1>";
     orderFinal.innerHTML = "<h4 class='middle'>" + itemsOrder.replace(/_/g, " ") + "</h4>";
     console.log(finalSandwichPrice, itemsOrder);
