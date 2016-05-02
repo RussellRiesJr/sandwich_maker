@@ -29,7 +29,7 @@ meatChooser.addEventListener("click", function(event) {
   // Add the topping to the SandwichMaker to increase the total price
     finalSandwichPrice += order.price;
     itemsOrder += order.item + " ";
-    price.innerHTML = "<h1>$" + finalSandwichPrice + "</h1>";
+    price.innerHTML = "<h1>$" + finalSandwichPrice.toFixed(2) + "</h1>";
     orderFinal.innerHTML = "<h4>" + itemsOrder + "</h4>";
     console.log(finalSandwichPrice, itemsOrder);
   }
@@ -41,7 +41,7 @@ breadChooser.addEventListener("click", function(event) {
     var order = SandwichMaker.addBread(selectedTopping)
     finalSandwichPrice += order.price;
     itemsOrder += order.item + " ";
-    price.innerHTML = "<h1>$" + finalSandwichPrice + "</h1>";
+    price.innerHTML = "<h1>$" + finalSandwichPrice.toFixed(2) + "</h1>";
     orderFinal.innerHTML = "<h4>" + itemsOrder + "</h4>";
     console.log(finalSandwichPrice, itemsOrder);
   }
@@ -53,7 +53,7 @@ cheeseChooser.addEventListener("click", function(event) {
     var order = SandwichMaker.addCheese(selectedTopping)
     finalSandwichPrice += order.price;
     itemsOrder += order.item + " ";
-    price.innerHTML = "<h1>$" + finalSandwichPrice + "</h1>";
+    price.innerHTML = "<h1>$" + finalSandwichPrice.toFixed(2) + "</h1>";
     orderFinal.innerHTML = "<h4>" + itemsOrder + "</h4>";
     console.log(finalSandwichPrice, itemsOrder);
   }
@@ -65,7 +65,7 @@ condimentChooser.addEventListener("click", function(event) {
     var order = SandwichMaker.addCondiment(selectedTopping);
     finalSandwichPrice += order.price;
     itemsOrder += order.item + " ";
-    price.innerHTML = "<h1>$" + finalSandwichPrice + "</h1>";
+    price.innerHTML = "<h1>$" + finalSandwichPrice.toFixed(2) + "</h1>";
     orderFinal.innerHTML = "<h4>" + itemsOrder + "</h4>";
     console.log(finalSandwichPrice, itemsOrder);
   }
@@ -77,7 +77,7 @@ veggieChooser.addEventListener("click", function(event) {
     var order = SandwichMaker.addVeggie(selectedTopping)
     finalSandwichPrice += order.price;
     itemsOrder += order.item + " ";
-    price.innerHTML = "<h1>$" + finalSandwichPrice + "</h1>";
+    price.innerHTML = "<h1>$" + finalSandwichPrice.toFixed(2) + "</h1>";
     orderFinal.innerHTML = "<h4>" + itemsOrder + "</h4>";
     console.log(finalSandwichPrice, itemsOrder);
   }
