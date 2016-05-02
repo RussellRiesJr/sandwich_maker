@@ -6,11 +6,11 @@
     <title>Sandwich Maker! </title>
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
-  <body>
+  <body class="background">
   <!-- a section of options for each sandwich part -->
     <section>
-      <fieldset>
-        <h3>Let's Build Your Sandwich!!!</h3>
+      <fieldset class="boxy">
+        <h1>Let's Build Your Sandwich!!!</h1>
         <div id="bread_button">
           <h5>What kind of bread would you like? (Pick one)</h5>
           <input type="radio" name="bread" value="white">White
@@ -51,14 +51,11 @@
         </div>
       </fieldset>
       <div>
-        <div>
-          <h2>Your Order: </h2>
-          <p id="sandwich_items">
-          </p>
+        <div class="box">
+          <h2 id="sandwich_items">Your Order: </h2>
         </div>
-        <div>
-          <h1>Total:</h1>
-          <p id="purchase_total"></p>
+        <div class="box">
+          <h1 id="purchase_total">Total:</h1>
         </div>
       </div>
     </section>
